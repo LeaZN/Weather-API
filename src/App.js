@@ -22,7 +22,7 @@ class App extends Component {
     return (
       <div className="app">
         <SayHi />
-        <SayHello color="black" name={this.state.name} />
+        <SayHello color="green" name={this.state.name} />
         <Search handleInput={this.handleInputChange} />
       </div>
     );
