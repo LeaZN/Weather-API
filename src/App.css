@@ -83,14 +83,17 @@ header {
 }
 
 
-
-
-.main {
+.Current {
   background-color: rgb(156, 206, 244);
- height: 100vh;
-  margin: 0px;
-  
 }
+
+
+.nextHrs {
+  background-color: rgb(156, 206, 244);
+  margin-top: -50px;
+  padding-bottom: 50px;
+}
+
 
 
 .app {

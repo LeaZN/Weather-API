@@ -2,6 +2,9 @@ import React, { Component } from "react";
 
 import fakeWeatherData from "./fakeWeatherData.json";
 import SearchComp from './components/SearchComp'
+import CurrentComp from './components/CurrentComp'
+import Next24Comp from './components/Next24Comp'
+
 
 import "./App.css";
 
@@ -18,96 +21,41 @@ import unknown from "./img/weather-icons/unknown.svg";
 
 
 
-
-
 class App extends Component {
-state = {
-  searchbar: [
-    {
-      id: 1,
-      title: "london",
-    },
-    {
-      id: 2,
-      title: "FIND WEATHER",
-    }
-    
-  ]
-}
 
+
+// state = {
+//   searchbar: [
+//     {
+//       id: 1,
+//       title: "london",
+//     },
+//     {
+//       id: 2,
+//       title: "FIND WEATHER",
+//     }
+    
+//   ]
+// }
 
 
 
   render() {
     return (
+
 <div className="app">
 
+   <SearchComp />
+    
+   <CurrentComp/>
 
-  <SearchComp />
-    <header className="SearchBar">
-            <h3> london </h3>
-            <button> FIND WEATHER</button>
-         </header>
-   
-    <div className="main">
-      <div className="Current">
-       <img src="http://placekitten.com/130/130"/>  
-      
-       
-       <h3>  overcast clouds</h3>
-       
-       <h3 class="CurrentTemp"> Temperature 10° to 11°C</h3>
-       <div class="CurrentDetails">
-       <h4> Humidity </h4>
-       <h4> 78% </h4>
-       <h4> Pressure </h4>
-       <h4> 1008.48 </h4>
-       </div>
-       </div>
-
-       <div className="nextHrs">
-         <div className="time">
-<h5> 03:00 </h5>
-<h5> 06:00 </h5>
-<h5> 09:00 </h5>
-<h5> 12:00 </h5>
-<h5> 15:00 </h5>
-<h5> 18:00 </h5>
-<h5> 21:00 </h5>
-</div>
-<div className="icons">
-
-<img src="http://placekitten.com/50/50"/> 
-<img src="http://placekitten.com/50/50"/> 
-<img src="http://placekitten.com/50/50"/> 
-<img src="http://placekitten.com/50/50"/> 
-<img src="http://placekitten.com/50/50"/> 
-<img src="http://placekitten.com/50/50"/> 
-<img src="http://placekitten.com/50/50"/> 
-
-</div>
-<div className="degrees">
-<h5> 8°C</h5>
-<h5> 9°C</h5>
-<h5> 14°C</h5>
-<h5> 17°C</h5>
-<h5> 18°C</h5>
-<h5> 16°C</h5>
-<h5> 13°C</h5>
-</div>
-</div>
-</div>
-
+   <Next24Comp/>
     
 </div>
+
     );
   }
 }
-
-
-
-
-
 
 export default App;
 
