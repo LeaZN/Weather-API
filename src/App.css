@@ -1,25 +1,121 @@
-.app {
-  height: 100vh;
-  width: 100vw;
-  transition: background-color 1s ease-in;
+* {
+  margin: 0%;
+  padding: 0%;
 }
 
-.app__header,
-.app__main {
-  width: 100%;
+
+
+
+
+ .SearchBar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  font-family: "Raleway", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  flex-direction: row;
+  justify-content: flex-start;
+} 
+
+
+button{
+  background-color: rgb(88, 121, 199);
+  font-weight: 100;
+  
+  border: 0;
+  color: rgb(40,40,40);
+ margin-top: 15px;
+  width: 135px;
+  height: 40px;
+  
+ 
 }
 
-/*  Search bar */
 
-/* Current weather */
+.SearchBar h3{
+padding-left: 15px;
+color: white;
+margin-top: 20px;
+text-align: left;
 
-div {
-  border: 5px solid red;
+width: 200px;
+align-self:flex-start;
+
+}
+
+
+
+
+header {
+  
+  background:rgb(117, 158, 218);
+  display: flex;
+  height: 70px;
+  justify-content: space-around;
+
+}
+
+.Current h3:nth-child(2){
+  color: white;
+  margin:20px;
+}
+
+.Current h3:nth-child(3){
+  margin: 20px;
+}
+
+
+.CurrentDetails {
+  Display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+}
+
+
+ .CurrentTemp{
+  
+  word-spacing: 5px;
+} 
+
+
+
+
+.Current h4{
+ font-size:smaller;
+  margin-left: 10px;
+}
+
+
+
+
+.main {
+  background-color: rgb(156, 206, 244);
+ height: 100vh;
+  margin: 0px;
+  
+}
+
+
+.app {
+
+   font-family: 'Raleway';
+}
+
+.time {
+  display: flex;
+  justify-content: space-around;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+}
+.degrees {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.Current{
+  
+  padding-bottom: 15%;
+  padding-top: 10%;
+  
+  text-align: center;
 }
