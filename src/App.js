@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import FakeWeather from "./data/fakeWeather.json";
 import fakeWeatherData from "./fakeWeatherData.json";
 import SearchComp from './components/SearchComp'
 import CurrentComp from './components/CurrentComp'
@@ -24,21 +24,6 @@ import unknown from "./img/weather-icons/unknown.svg";
 class App extends Component {
 
 
-// state = {
-//   searchbar: [
-//     {
-//       id: 1,
-//       title: "london",
-//     },
-//     {
-//       id: 2,
-//       title: "FIND WEATHER",
-//     }
-    
-//   ]
-// }
-
-
 
   render() {
     return (
@@ -46,10 +31,37 @@ class App extends Component {
 <div className="app">
 
    <SearchComp />
-    
-   <CurrentComp/>
 
-   <Next24Comp/>
+   {/* <CurrentComp src={partlycloudy} /> */}
+   <CurrentComp 
+
+    status={fakeWeatherData.list[0].weather[0].description}
+    src={clear}
+    tempmin={fakeWeatherData.list[0].main.temp_min}
+    tempmax={fakeWeatherData.list[0].main.temp_max}
+    humidity={fakeWeatherData.list[0].main.humidity}
+    pressure={fakeWeatherData.list[0].main.pressure}/>
+
+
+   <Next24Comp
+
+   
+   src3={rain}
+   temp3={fakeWeatherData.list[5].main.temp}
+   src6={rain}
+   temp6={fakeWeatherData.list[6].main.temp}
+   src9={rain}
+   temp9={fakeWeatherData.list[7].main.temp}
+   src12={rain}
+   temp12={fakeWeatherData.list[8].main.temp}
+   src15={rain}
+   temp15={fakeWeatherData.list[9].main.temp}
+   src18={rain}
+   temp18={fakeWeatherData.list[10].main.temp}
+   src21={rain}
+   temp21={fakeWeatherData.list[11].main.temp}
+  
+   />
     
 </div>
 

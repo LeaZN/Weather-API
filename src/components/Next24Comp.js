@@ -8,6 +8,7 @@ class Next24Comp extends Component {
 
         <div className="nextHrs">
         <div className="time">
+
 <h5> 03:00 </h5>
 <h5> 06:00 </h5>
 <h5> 09:00 </h5>
@@ -18,23 +19,24 @@ class Next24Comp extends Component {
 </div>
 <div className="icons">
 
-<img src="http://placekitten.com/50/50"/> 
-<img src="http://placekitten.com/50/50"/> 
-<img src="http://placekitten.com/50/50"/> 
-<img src="http://placekitten.com/50/50"/> 
-<img src="http://placekitten.com/50/50"/> 
-<img src="http://placekitten.com/50/50"/> 
-<img src="http://placekitten.com/50/50"/> 
+
+<img src={this.props.src3} alt="rain icon"/>
+<img src={this.props.src6} alt="rain icon"/>
+<img src={this.props.src9} alt="rain icon"/>
+<img src={this.props.src12} alt="rain icon"/>
+<img src={this.props.src15} alt="rain icon"/>
+<img src={this.props.src18} alt="rain icon"/>
+<img src={this.props.src21} alt="rain icon"/>
 
 </div>
 <div className="degrees">
-<h5> 8°C</h5>
-<h5> 9°C</h5>
-<h5> 14°C</h5>
-<h5> 17°C</h5>
-<h5> 18°C</h5>
-<h5> 16°C</h5>
-<h5> 13°C</h5>
+<h5> {this.props.temp3} F </h5>
+<h5> {this.props.temp6} F </h5>
+<h5> {this.props.temp9} F</h5>
+<h5> {this.props.temp12} F</h5>
+<h5> {this.props.temp15} F</h5>
+<h5> {this.props.temp18} F</h5>
+<h5> {this.props.temp21} F</h5>
 </div>
 </div>
 
