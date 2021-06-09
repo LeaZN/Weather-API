@@ -7,8 +7,13 @@ class SearchComp extends Component {
 
 
 <header className="SearchBar">
-            <h3> london </h3>
-            <button> FIND WEATHER</button>
+             
+            <form action="printText(this.value)">
+             <input id="CITYid" type="text" id="city" name="city" placeholder="London"/>
+            
+            <button type="Submit" > FIND WEATHER</button>
+            </form>
+            
          </header>
    
     );
@@ -16,5 +21,4 @@ class SearchComp extends Component {
 }
 
 export default SearchComp;
-
 

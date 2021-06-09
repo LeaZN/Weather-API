@@ -5,8 +5,8 @@
 
 
 .Current img {
-  width: 40%;
-  height: 40%;
+  width: 20%;
+  height: 20%;
 }
 
 
@@ -17,10 +17,10 @@
 } 
 
 
-button{
+ button{
   background-color: rgb(88, 121, 199);
   font-weight: 100;
-  
+  margin-left: 8rem;
   border: 0;
   color: rgb(40,40,40);
  margin-top: 15px;
@@ -28,20 +28,26 @@ button{
   height: 40px;
   
  
-}
+} 
 
 
-.SearchBar h3{
-padding-left: 15px;
-color: white;
+.SearchBar input{
+margin-left: 25px;
+border: 0;
 margin-top: 20px;
 text-align: left;
-
-width: 200px;
+color: white;
+background:  rgb(117, 158, 218);
+height: 25px;
 align-self:flex-start;
 
 }
-
+ ::placeholder{
+   color: white;
+   font-size: 1.3rem;
+   font-weight: 100;
+   
+ }
 
 
 
@@ -88,6 +94,11 @@ header {
 
 .Current {
   background-color: rgb(156, 206, 244);
+  
+  padding-bottom: 10%;
+  padding-top: 0%;
+  
+  text-align: center;
 }
 
 
@@ -118,17 +129,13 @@ header {
 }
 
 
-.Current{
+.icons {
+  margin-top: 20px;
+  margin-bottom: 20px;
   
-  padding-bottom: 15%;
-  padding-top: 10%;
-  
-  text-align: center;
 }
 
-
-
 .icons img {
-  width: 10%;
-  height: 10%;
+  width: 7%;
+  height: 7%;
 }

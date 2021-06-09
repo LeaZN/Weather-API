@@ -21,6 +21,36 @@ import unknown from "./img/weather-icons/unknown.svg";
 
 
 
+
+
+// CITYid= document.getElementById('CityID').value; 
+
+
+// function printText(){
+
+//   var cityID = document.getElementById('CITYid').value;
+  
+//  return (cityID);
+//  }
+
+
+
+// function WeatherData( cityID ) {
+  
+//   fetch('http://api.openweathermap.org/data/2.5/forecast?q=' + cityID+ '&cnt=8&units=metric&appid=1dbfddeb4930b11a6dad4caf4b57c7b3')  
+   
+//   .then(function(data) {
+//     console.log(data);
+//   })
+//   .catch(function() {
+    
+//   });
+// }
+
+
+
+
+
 class App extends Component {
 
 
@@ -32,15 +62,15 @@ class App extends Component {
 
    <SearchComp />
 
-   {/* <CurrentComp src={partlycloudy} /> */}
+   
    <CurrentComp 
 
-    status={fakeWeatherData.list[0].weather[0].description}
-    src={clear}
-    tempmin={fakeWeatherData.list[0].main.temp_min}
-    tempmax={fakeWeatherData.list[0].main.temp_max}
-    humidity={fakeWeatherData.list[0].main.humidity}
-    pressure={fakeWeatherData.list[0].main.pressure}/>
+    status={fakeWeatherData.list[4].weather[0].description}
+    src={cloudy}
+    tempmin={fakeWeatherData.list[4].main.temp_min}
+    tempmax={fakeWeatherData.list[4].main.temp_max}
+    humidity={fakeWeatherData.list[4].main.humidity}
+    pressure={fakeWeatherData.list[4].main.pressure}/>
 
 
    <Next24Comp
